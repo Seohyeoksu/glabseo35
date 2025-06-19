@@ -89,13 +89,13 @@ def extract_cart_df(
 
 # ───────────── 2. Streamlit UI ─────────────
 st.set_page_config(page_title="🛒 장바구니 → Excel", layout="centered")
-st.title("🛒 장바구니 캡처 → 품목 Excel 변환기 (GPT-4o)")
+st.title("🛒 장바구니 캡처 → 품목 Excel 에듀파인 변환기 ")
 
 upload = st.file_uploader("장바구니 캡처(JPG/PNG)", ["jpg","jpeg","png"])
 if upload:
     st.image(upload, caption="업로드된 이미지", use_container_width=True)   # ← 경고 해결
 
-    with st.spinner("GPT-4o Vision 처리 중…"):
+    with st.spinner("처리 중…"):
         df = extract_cart_df(upload.read(), st.secrets["OPENAI_API_KEY"])
 
     if df.empty:
