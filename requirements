@@ -1,9 +1,5 @@
-
-
-
 streamlit>=1.35
 openai>=1.14.0          # ← 1.x 이상으로 반드시 지정
 pandas>=2.2
 pillow>=10.3
 xlsxwriter>=3.2
-
