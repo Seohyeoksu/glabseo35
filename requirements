@@ -1,0 +1,8 @@
+
+streamlit>=1.35         # UI
+openai>=1.30            # GPT-4o Vision + 함수 호출 지원
+
+
+pandas>=2.2
+pillow>=10.3            # 이미지 표시/처리
+xlsxwriter>=3.2    
