@@ -6,7 +6,7 @@ import streamlit as st
 import pandas as pd
 from openai import OpenAI, APIConnectionError, RateLimitError
 
-───────────── 1. Vision → DataFrame 함수 ─────────────
+# ───────────── 1. Vision → DataFrame 함수 ─────────────
 def extract_cart_df(
     image_bytes: bytes,
     api_key: str,
