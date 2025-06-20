@@ -1,4 +1,4 @@
-## app_cart_ocr.py  (2025-06-19 패치)
+
 
 import base64, json, re, time
 from io import BytesIO
@@ -8,7 +8,7 @@ import streamlit as st
 import pandas as pd
 from openai import OpenAI, APIConnectionError, RateLimitError
 
-# ───────────── 1. Vision → DataFrame 함수 ─────────────
+───────────── 1. Vision → DataFrame 함수 ─────────────
 def extract_cart_df(
     image_bytes: bytes,
     api_key: str,
